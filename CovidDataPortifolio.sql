@@ -41,7 +41,6 @@ GROUP BY 1
 ORDER BY 2 DESC;
 
 /*Global Numbers*/
-
 SELECT date, SUM(new_cases)
 FROM coviddeaths
 GROUP BY date
@@ -66,7 +65,7 @@ ORDER BY 1,2;
 /* Vaccinations*/
 SELECT * FROM covidvaccination;
 
-/*Join two tables on location and date*/
+  /*Join two tables on location and date*/
 SELECT *
 FROM coviddeaths cd
 JOIN covidvaccination cv
